@@ -102,51 +102,6 @@ header div.menu ul li.contact a:hover {
 	color: black;
 	border-bottom: solid 0.5vh orangered;
 }
-/* header div.firstMargin {
-	display: flex;
-	flex-basis: 5%;
-	width: 100%;
-}
-header div.lastMargin {
-	display: flex;
-	flex-basis: 10%;
-} */
-
-nav {
-	position: fixed;
-	height: 9.25em;
-	width: 25vw;
-	right: 1em;
-	bottom: 0;
-	z-index: 3;
-	font-family: Boku2, Meiryo, sans-serif;
-	background-color: white;
-	border-radius: 2vw 2vw 0 0;
-	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
-	overflow: hidden;
-}
-nav div.title {
-	color: white;
-	background-color: rgb(22, 65, 9);
-	border-radius: 2vw 2vw 0 0;
-}
-nav div.contentsList {
-	margin-top: -0.75em;
-	font-size: 0.8em;
-	text-align: left;
-	background-color: white;
-}
-nav div.contentsList ul {
-	list-style: none;
-	padding-left: 1em;
-}
-nav div.contentsList ul li a {
-	color: dimgray;
-	text-decoration: none;
-}
-nav div.contentsList ul li a:hover {
-	color: black;
-}
 
 section.profile {
 	height: 100vh;
@@ -217,7 +172,7 @@ section.profile div.contents ul li a {
 
 section.skill {
 	height: 100vh;
-	padding-top: 12.5vh;
+	padding-top: 5vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
 }
@@ -228,7 +183,7 @@ section.skill div.contents h1 {
 
 section.history {
 	height: 100vh;
-	padding-top: 12.5vh;
+	padding-top: 5vh;
 	background-color: whitesmoke;
 	overflow: hidden;
 }
@@ -239,7 +194,7 @@ section.history div.contents h1 {
 
 section.favorite {
 	height: 100vh;
-	padding-top: 12.5vh;
+	padding-top: 5vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
 }
@@ -250,7 +205,7 @@ section.favorite div.contents h1 {
 
 section.link {
 	height: 100vh;
-	padding-top: 12.5vh;
+	padding-top: 5vh;
 	background-color: whitesmoke;
 	overflow: hidden;
 }
@@ -261,7 +216,7 @@ section.link div.contents h1 {
 
 section.seheki {
 	height: 100vh;
-	padding-top: 12.5vh;
+	padding-top: 5vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
 }
