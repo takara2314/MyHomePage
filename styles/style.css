@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@font-face {
+	font-family: 'Boku2';
+	src: url("../fonts/Boku2-Bold.otf");
+}
+@font-face {
+	font-family: 'Makinas';
+	src: url('../fonts/Makinas-4-Square.otf')
+}
+
+@keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+body {
+	font-size: 2vw;
+	font-family: 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
+	background-color: whitesmoke;
+	text-align: center;
+	margin: 0;
+}
+
+::selection {
+	background-color: rgba(0, 190, 240, 0.5);
+	color: #000000;
+}
+
+header {
+	display: flex;
+	position: fixed;
+	height: 7.5vh;
+	width: calc(100% - 10vw);
+	margin: 2vh 5vw;
+	z-index: 3;
+	background-color: white;
+	border-radius: 4.75vh;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+header div.logo {
+	color: rgb(22, 65, 9);
+	font-size: 3vw;
+	font-family: Makinas, Meiryo, sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-basis: 40%;
+}
+header div.logo a {
+	color: green;
+	text-decoration: none;
+}
+header div.menu {
+	color: black;
+	font-size: 2vw;
+	font-family: Boku2, Meiryo, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 50%;
+}
+header div.menu ul {
+	list-style: none;
+	width: 100%;
+    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+header div.menu ul li a {
+	color: dimgray;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: 7vh;
+	width: 100%;
+	border-bottom: solid 0.5vh white;
+}
+header div.menu ul li.selfintro a:hover {
+	color: black;
+	border-bottom: solid 0.5vh limegreen;
+}
+header div.menu ul li.portfolio a:hover {
+	color: black;
+	border-bottom: solid 0.5vh gold;
+}
+header div.menu ul li.blog a:hover {
+	color: black;
+	border-bottom: solid 0.5vh dodgerblue;
+}
+header div.menu ul li.contact a:hover {
+	color: black;
+	border-bottom: solid 0.5vh orangered;
+}
+/* header div.firstMargin {
+	display: flex;
+	flex-basis: 5%;
+	width: 100%;
+}
+header div.lastMargin {
+	display: flex;
+	flex-basis: 10%;
+} */
+
+nav {
+	position: fixed;
+	height: 9.25em;
+	width: 25vw;
+	right: 1em;
+	bottom: 0;
+	z-index: 3;
+	font-family: Boku2, Meiryo, sans-serif;
+	background-color: white;
+	border-radius: 2vw 2vw 0 0;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+nav div.title {
+	color: white;
+	background-color: rgb(22, 65, 9);
+	border-radius: 2vw 2vw 0 0;
+}
+nav div.contentsList {
+	margin-top: -0.75em;
+	font-size: 0.8em;
+	text-align: left;
+	background-color: white;
+}
+nav div.contentsList ul {
+	list-style: none;
+	padding-left: 1em;
+}
+nav div.contentsList ul li a {
+	color: dimgray;
+	text-decoration: none;
+}
+nav div.contentsList ul li a:hover {
+	color: black;
+}
+
+section.profile {
+	height: 100vh;
+	padding-top: 10vh;
+	background-color: whitesmoke;
+	overflow: hidden;
+	position: relative;
+	font-size: 2vw;
+}
+section.profile div.mainBackground1 {
+	background-image: url("../images/wave.svg");
+	background-repeat: no-repeat;
+	background-size: 150%;
+	transform: rotate(25deg);
+	height: 300vh;
+	width: 300vw;
+	z-index: 1;
+	position: absolute;
+	left: -92.5vw;
+	bottom: -182.5vh;
+	pointer-events: none;
+}
+section.profile div.mainBackground2 {
+	background-color: rgb(0, 203, 169);
+	margin-top: 30%;
+	height: 100%;
+	width: 100%;
+}
+section.profile div.mainBackground3 {
+	background-image: url("../images/topPageTakaran.webp");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	left: -5vw;
+	bottom: -13vh;
+	pointer-events: none;
+}
+section.profile div.contents {
+	text-align: left;
+	padding-left: 32vw;
+}
+section.profile div.contents h1 {
+	margin: 5vw 0 0 0;
+}
+section.profile div.contents h1 span.mainName {
+	font-size: 5vw;
+}
+section.profile div.contents h1 span.idName {
+	font-size: 3.5vw;
+	color: gray;
+	margin-left: 2.5vw;
+}
+section.profile div.contents ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	padding: 0;
+	margin: 0;
+}
+section.profile div.contents ul li a {
+	color: rgb(27, 149, 224);
+	text-decoration: none;
+}
+
+section.skill {
+	height: 100vh;
+	padding-top: 12.5vh;
+	background-color: rgb(181, 234, 144);
+	overflow: hidden;
+}
+section.skill div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 5vw;
+}
+
+section.history {
+	height: 100vh;
+	padding-top: 12.5vh;
+	background-color: whitesmoke;
+	overflow: hidden;
+}
+section.history div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 4vw;
+}
+
+section.favorite {
+	height: 100vh;
+	padding-top: 12.5vh;
+	background-color: rgb(181, 234, 144);
+	overflow: hidden;
+}
+section.favorite div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 5vw;
+}
+
+section.link {
+	height: 100vh;
+	padding-top: 12.5vh;
+	background-color: whitesmoke;
+	overflow: hidden;
+}
+section.link div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 5vw;
+}
+
+section.seheki {
+	height: 100vh;
+	padding-top: 12.5vh;
+	background-color: rgb(181, 234, 144);
+	overflow: hidden;
+}
+section.seheki div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 5vw;
+}
+
+footer {
+	color: white;
+	background-color: rgb(22, 65, 9);
+	padding: 1.75vh 30vw 1vh 0;
+	font-size: 1.75vw;
+	font-family: 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
+	text-align: right;
+}
