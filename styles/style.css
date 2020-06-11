@@ -147,15 +147,19 @@ section.profile div.contents {
 	padding-left: 32vw;
 }
 section.profile div.contents h1 {
-	margin: 5vw 0 0 0;
+	margin: 5.75vw 0 0 0;
+	font-size: 5vw;
+	line-height: 175%;
 }
 section.profile div.contents h1 span.mainName {
 	font-size: 5vw;
+	font-size: 5vw;
+	line-height: 175%;
 }
 section.profile div.contents h1 span.idName {
 	font-size: 3.5vw;
 	color: gray;
-	margin-left: 2.5vw;
+	margin-left: 2vw;
 }
 section.profile div.contents ul {
 	list-style: none;
@@ -170,59 +174,199 @@ section.profile div.contents ul li a {
 	text-decoration: none;
 }
 
+section div.contents h1 {
+	margin: 5vw 0 0 0;
+	font-size: 5vw;
+	line-height: 75%;
+}
+
 section.skill {
 	height: 100vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
 }
-section.skill div.contents h1 {
-	margin: 5vw 0 0 0;
-	font-size: 5vw;
+section.skill div.contents div.container {
+	display: flex;
+	flex-direction: row;
+	width: calc(100% - 10vw);
+	height: 65vh;
+	margin: 0 5vw;
+	border-radius: 0.75vw;
+	background-color: whitesmoke;
+}
+section.skill div.contents div.container section div span.containerName {
+	color: gray;
+}
+section.skill div.contents div.container section div ul {
+	/* background-color: red; */
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1.5vh 0 0 0;
+}
+section.skill div.contents div.container section div ul li div.skillBox {
+	margin-top: 0;
+	width: 10vw;
+}
+section.skill div.contents div.container section div ul li div.skillBox span.skillName {
+	font-size: 1.5vw;
+}
+section.skill div.contents div.container section.prograLangsSection {
+	flex-basis: 50%;
+	overflow: hidden;
+}
+section.skill div.contents div.container section.prograLangsSection div.prograLangs {
+	height: 100%;
+	align-content: space-around;
+	overflow: hidden;
+}
+section.skill div.contents div.container section.prograLangsSection div.prograLangs ul {
+	list-style: none;
+	display: flex;
+}
+section.skill div.contents div.container section.othersSection {
+	flex-basis: 50%;
+	overflow: hidden;
+}
+section.skill div.contents div.container section.othersSection div.prograFWs {
+	height: 33%;
+	align-content: space-around;
+	overflow: hidden;
+}
+section.skill div.contents div.container section.othersSection div.markupLangs {
+	height: 33%;
+	align-content: space-around;
+	overflow: hidden;
+}
+section.skill div.contents div.container section.othersSection div.tools {
+	height: 33%;
+	align-content: space-around;
+	overflow: hidden;
+}
+section.skill div.contents div.container section div ul li div div.GoLogo {
+	background-image: url("../images/GoLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.PythonLogo {
+	background-image: url("../images/PythonLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.CsharpLogo {
+	background-image: url("../images/CsharpLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.DartLogo {
+	background-image: url("../images/DartLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.JavaScriptLogo {
+	background-image: url("../images/JavaScriptLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.PostgreSQLLogo {
+	background-image: url("../images/PostgreSQLLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 45%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.FlaskLogo {
+	background-image: url("../images/FlaskLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 34%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.WPFLogo {
+	background-image: url("../images/WPFLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.FlutterLogo {
+	background-image: url("../images/FlutterLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 37.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.HTMLLogo {
+	background-image: url("../images/HTMLLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 32.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.CSSLogo {
+	background-image: url("../images/CSSLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 32.5%;
+	width: 10vw;
+	height: 10vh;
+}
+section.skill div.contents div.container section div ul li div div.MineImatorLogo {
+	background-image: url("../images/Mine-imatorLogo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 47.5%;
+	width: 10vw;
+	height: 10vh;
 }
 
 section.history {
 	height: 100vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 	background-color: whitesmoke;
 	overflow: hidden;
-}
-section.history div.contents h1 {
-	margin: 5vw 0 0 0;
-	font-size: 4vw;
 }
 
 section.favorite {
 	height: 100vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
-}
-section.favorite div.contents h1 {
-	margin: 5vw 0 0 0;
-	font-size: 5vw;
 }
 
 section.link {
 	height: 100vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 	background-color: whitesmoke;
 	overflow: hidden;
-}
-section.link div.contents h1 {
-	margin: 5vw 0 0 0;
-	font-size: 5vw;
 }
 
 section.seheki {
 	height: 100vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 	background-color: rgb(181, 234, 144);
 	overflow: hidden;
-}
-section.seheki div.contents h1 {
-	margin: 5vw 0 0 0;
-	font-size: 5vw;
 }
 
 footer {
