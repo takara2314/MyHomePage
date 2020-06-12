@@ -201,7 +201,6 @@ section.skill div.contents div.container section div span.containerName {
 	color: gray;
 }
 section.skill div.contents div.container section div ul {
-	/* background-color: red; */
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -353,6 +352,75 @@ section.history {
 	background-color: whitesmoke;
 	overflow: hidden;
 }
+section.history div.contents div.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 70vh;
+	margin: 0 5vw;
+}
+section.history div.contents div.container ul {
+	padding: 0;
+	width: 90vw;
+}
+section.history div.contents div.container ul li.firstLine {
+	width: 90vw;
+	height: 35vh;
+	border-top: solid 1vh rgb(0, 203, 169);
+	margin-top: 2vh;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+section.history div.contents div.container ul li.secondLine {
+	width: 90vw;
+	height: 35vh;
+	border-top: solid 1vh rgb(0, 203, 169);
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+section.history div.contents div.container ul li ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+section.history div.contents div.container ul li ul div {
+	width: 18vw;
+	font-size: 1.25vw;
+	line-height: 2vw;
+}
+section.history div.contents div.container ul li ul li div h2 {
+	font-size: 1.6vw;
+	margin: 2.5vh 0 0 0;
+}
+section.history div.contents div.container ul li ul li div.deleteLine1 {
+	background-color: red;
+	position: absolute;
+	width: 10vw;
+	height: 10vh;
+}
+section.history div.contents div.container ul li ul li div.deleteLine2 {
+	border-top: solid 2vh whitesmoke;
+	position: absolute;
+	width: 35vw;
+	margin: -1.5vh 0 0 10vw;
+}
+section.history div.contents div.container ul li ul li div.deleteLine2::after {
+	content: "";
+	position: absolute;
+	width: 10vw;
+	height: 1vh;
+	background: -webkit-linear-gradient(left, rgba(0, 203, 169, 1), rgba(0, 203, 169, 0));
+	/* background-color: -webkit-linear-gradient(left, #f00, #00f); */
+}
+/* section.history div.contents div.container ul li ul li div.changeLine {
+	border-top: solid 1vh white;
+	position: absolute;
+	width: 35vw;
+	margin: -1vh 0 0 10vw;
+} */
 
 section.favorite {
 	height: 100vh;
