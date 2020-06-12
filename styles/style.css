@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 @font-face {
-	font-family: 'Boku2';
-	src: url("../fonts/Boku2-Bold.otf");
+	font-family: 'Makinas';
+	src: url("../fonts/Makinas-Bold.otf");
 }
 @font-face {
 	font-family: 'Makinas';
 	src: url('../fonts/Makinas-4-Square.otf')
+}
+@font-face {
+	font-family: 'Icons';
+	src: url('../fonts/Icons.ttf')
 }
 
 @keyframes fadeIn {
@@ -48,7 +52,7 @@ header {
 header div.logo {
 	color: rgb(22, 65, 9);
 	font-size: 3vw;
-	font-family: Makinas, Meiryo, sans-serif;
+	font-family: Makinas, 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
 	font-weight: bold;
 	display: flex;
 	justify-content: start;
@@ -62,7 +66,7 @@ header div.logo a {
 header div.menu {
 	color: black;
 	font-size: 2vw;
-	font-family: Boku2, Meiryo, sans-serif;
+	font-family: 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -76,6 +80,9 @@ header div.menu ul {
 	align-items: center;
 	padding: 0;
 	margin: 0;
+}
+header div.menu ul li {
+	/* 朝起きたらここを直す！ */
 }
 header div.menu ul li a {
 	color: dimgray;
@@ -387,7 +394,7 @@ section.history div.contents div.container ul li ul {
 	padding: 0;
 }
 section.history div.contents div.container ul li ul div {
-	width: 18vw;
+	width: 20vw;
 	font-size: 1.25vw;
 	line-height: 2vw;
 }
@@ -395,32 +402,91 @@ section.history div.contents div.container ul li ul li div h2 {
 	font-size: 1.6vw;
 	margin: 2.5vh 0 0 0;
 }
+section.history div.contents div.container ul li ul div span.timeStamp {
+	color: gray;
+}
 section.history div.contents div.container ul li ul li div.deleteLine1 {
-	background-color: red;
+	border-top: solid 2vh whitesmoke;
 	position: absolute;
 	width: 10vw;
-	height: 10vh;
+	margin: -1.5vh 0 0 0;
 }
 section.history div.contents div.container ul li ul li div.deleteLine2 {
 	border-top: solid 2vh whitesmoke;
 	position: absolute;
-	width: 35vw;
-	margin: -1.5vh 0 0 10vw;
+	margin: -1.5vh 0 0 30vw;
 }
 section.history div.contents div.container ul li ul li div.deleteLine2::after {
 	content: "";
 	position: absolute;
-	width: 10vw;
+	width: 20vw;
 	height: 1vh;
 	background: -webkit-linear-gradient(left, rgba(0, 203, 169, 1), rgba(0, 203, 169, 0));
-	/* background-color: -webkit-linear-gradient(left, #f00, #00f); */
+	margin: -1.5vh 0 0 -25vh;
 }
-/* section.history div.contents div.container ul li ul li div.changeLine {
-	border-top: solid 1vh white;
+section.history div.contents div.container ul li ul li div.born::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
 	position: absolute;
-	width: 35vw;
-	margin: -1vh 0 0 10vw;
-} */
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.amebloStart::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.stpStart::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.potechiStart::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.prograStart::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.kosenEntry::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
+section.history div.contents div.container ul li ul li div.pagePublish::before {
+	content: "";
+	font-family: Icons;
+	font-size: 3vw;
+	color: rgb(0, 203, 169);
+	background: whitesmoke;
+	position: absolute;
+	margin: -5.5vh 0 0 -2.5vh;
+}
 
 section.favorite {
 	height: 100vh;
