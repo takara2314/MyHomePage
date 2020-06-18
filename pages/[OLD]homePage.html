@@ -1,0 +1,322 @@
+<!-- このhtmlは1から書き直します。多分。 -->
+<!-- レスポンシブデザインを目指して
+1. なんでもかんでもclassを使わない！id使え！
+2. タグを細かいところから指定しない！
+3. divの中のdivをリストみたいに表示したくても、liは使わない！
+4. flexを信じろ！
+5. flexとGridを使い分けろ！
+6. 毎日GitHubに草はやせ！
+7. vh,vwだけじゃなくemも活用しろ！
+8. 文字の大きさにvw使うの禁止！F12押したら文字見にくくなるわ！ -->
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>タカラーンの基地</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link rel="shortcut icon" href="../images/favicon.ico">
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<a href="https://2314.tk/">タカラーンの基地</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="selfintro"><a href="https://2314.tk/">自己紹介</a></li>
+					<li class="portfolio"><a href="https://2314.tk/portfolio">製作物</a></li>
+					<li class="blog"><a href="https://blog.2314.tk/">ブログ</a></li>
+					<li class="contact"><a href="https://2314.tk/contact">お問い合わせ</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section class="profile" id="profile">
+			<div class="mainBackground1"><div class="mainBackground2"></div></div>
+			<div class="mainBackground3"></div>
+			<div class="contents">
+				<h1>
+					<span class="mainName">タカラーン</span>
+					<span class="idName">@takara2314</span>
+				</h1>
+				ちょっと変わった高専2年生です。フリック入力ができません。<br>
+				マイクラやプログラミングなど、様々なことに手を出しています。<br>
+				「世の中の役に立つ人になること」<br>
+				将来の夢は小学生の頃から変わっていません。<br>
+				日々精進していくのでよろしくお願いします！<br>
+				<ul>
+					<li><a href="https://twitter.com/search?q=%23kosen19s">#kosen19s</a></li>
+					<li><a href="https://twitter.com/search?q=%23Minecraft">#Minecraft</a></li>
+					<li><a href="https://twitter.com/search?q=%23robocon">#robocon</a></li>
+					<li><a href="https://twitter.com/search?q=%23procon31">#procon31</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="skill" id="skill">
+			<div class="contents">
+				<h1>スキル</h1>
+				アイコンをクリックすると詳細を確認できます。(未実装)<br>
+				<div class="container">
+					<section class="prograLangsSection">
+						<div class="prograLangs">
+							<span class="containerName">プログラミング言語</span>
+							<ul>
+								<li>
+									<div class="skillBox">
+										<div class="GoLogo"></div>
+										<!-- <img src="../images/GoLogo.svg" width="100%"><br> -->
+										<span class="skillName">Go</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="PythonLogo"></div>
+										<!-- <img src="../images/PythonLogo.svg" width="100%"><br> -->
+										<span class="skillName">Python</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="CsharpLogo"></div>
+										<!-- <img src="../images/CsharpLogo.svg" width="100%"><br> -->
+										<span class="skillName">C#</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="DartLogo"></div>
+										<!-- <img src="../images/DartLogo.svg" width="100%"><br> -->
+										<span class="skillName">Dart</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="JavaScriptLogo"></div>
+										<!-- <img src="../images/JavaScriptLogo.svg" width="100%"><br> -->
+										<span class="skillName">JavaScript</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="PostgreSQLLogo"></div>
+										<!-- <img src="../images/PostgreSQLLogo.svg" width="100%"><br> -->
+										<span class="skillName">SQL</span>
+									</div>
+								</li>
+							</ul>
+							<!-- [Go] startAt 2020/01<br>
+							[Python] startAt 2017/11<br>
+							[C#] startAt 2019/01<br>
+							[Dart] startAt 2020/03<br>
+							[JavaScript] startAt 2020/05<br>
+							[SQL] startAt 2020/02 -->
+						</div>
+					</section>
+					<section class="othersSection">
+						<div class="prograFWs">
+							<span class="containerName">フレームワーク</span>
+							<ul>
+								<li>
+									<div class="skillBox">
+										<div class="FlaskLogo"></div>
+										<!-- <img src="../images/FlaskLogo.svg" width="100%"><br> -->
+										<span class="skillName">Flask</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="WPFLogo"></div>
+										<!-- <img src="../images/CsharpLogo.svg" width="100%"><br> -->
+										<span class="skillName">WPF</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="FlutterLogo"></div>
+										<!-- <img src="../images/FlutterLogo.svg" width="100%"><br> -->
+										<span class="skillName">Flutter</span>
+									</div>
+								</li>
+							</ul>
+							<!-- [Flask] startAt 2020/01<br>
+							[WPF] startAt 2019/07<br>
+							[Flutter] startAt 2020/03 -->
+						</div>
+						<div class="markupLangs">
+							<span class="containerName">マークアップ言語</span>
+							<ul>
+								<li>
+									<div class="skillBox">
+										<div class="HTMLLogo"></div>
+										<!-- <img src="../images/HTMLLogo.svg" width="80%"><br> -->
+										<span class="skillName">HTML</span>
+									</div>
+								</li>
+								<li>
+									<div class="skillBox">
+										<div class="CSSLogo"></div>
+										<!-- <img src="../images/CSSLogo.svg" width="100%"><br> -->
+										<span class="skillName">CSS</span>
+									</div>
+								</li>
+							</ul>
+							<!-- [HTML] startAt 2015/09<br>
+							[CSS] startAt 2019/05 -->
+						</div>
+						<div class="tools">
+							<span class="containerName">ツール</span>
+							<ul>
+								<li>
+									<div class="skillBox">
+										<div class="MineImatorLogo"></div>
+										<!-- <img src="../images/JavaScriptLogo.svg" width="100%"><br> -->
+										<span class="skillName">Mine-imator</span>
+									</div>
+								</li>
+							</ul>
+							<!-- [Mine-imator] startAt 2019/03 -->
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section class="history" id="history">
+			<div class="contents">
+				<h1>タイムライン</h1>
+				生まれたときから現在までの歴史です。
+				<div class="container">
+					<ul>
+						<li class="firstLine">
+							<ul>
+								<li>
+									<div class="deleteLine1"></div>
+									<div class="born">
+										<h2>誕生</h2>
+										<span class="timeStamp">2003年11月14日</span><br>
+										ハーフとしてタイで生まれました。
+										タイ語は全くできません。
+										5か月後に三重県に引っ越してきました。
+									</div>
+								</li>
+								<li>
+									<div class="amebloStart">
+										<h2>タカラーンブログ初投稿</h2>
+										<span class="timeStamp">2014年1月</span><br>
+										ネットに初めて自分の情報を文字として残しました。
+									</div>
+								</li>
+								<li>
+									<div class="stpStart">
+										<h2>MCStarPark開設</h2>
+										<span class="timeStamp">2015年7月</span><br>
+										初めて僕が鯖主を務めるマイクラ鯖を開きました。
+										自分で提供する楽しさを感じれました。
+										※閉鎖済: 公式サイト
+									</div>
+								</li>
+								<li>
+									<div class="potechiStart">
+										<h2>ポテチ鯖運営に就任</h2>
+										<span class="timeStamp">2017年7月</span><br>
+										MCStarParkの反省を活かし、再び運営に。
+										ネットで青春できました。
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="secondLine">
+							<ul>
+								<li>
+									<div class="prograStart">
+										<h2>プログラミングを開始</h2>
+										<span class="timeStamp">2017年11月</span><br>
+										Pythonで本格的にプログラミング界に
+										Hello worldしました。
+									</div>
+								</li>
+								<li>
+									<div class="kosenEntry">
+										<h2>鳥羽商船高等に入学</h2>
+										<span class="timeStamp">2019年4月</span><br>
+										高校とは少し違う高専に入学しました。
+										ロボコン部に加入し、高度な技術を勉強しています。
+									</div>
+								</li>
+								<li>
+									<div class="deleteLine2"></div>
+									<div class="changeLine"></div>
+									<div class="pagePublish">
+										<h2>このページを公開</h2>
+										<span class="timeStamp">2020年6月</span><br>
+										僕の個性や技術をアピールできる場を設けました。
+										読んでくれてありがとう！
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="favorite" id="favorite">
+			<div class="contents">
+				<h1>好きなもの</h1>
+				ドラえもんが好きです。(テンプレート。いやテンプレ関係なしでドラえもん好き。)
+			</div>
+		</section>
+
+		<section class="link" id="link">
+			<div class="contents">
+				<h1>リンク</h1>
+				ネット上で主に利用しているサービスです。<br>
+				諸事情により、サービスによってニックネームが異なります。
+				<div class="container">
+					<section class="MajorSection">
+						<!-- 優先順> PC:3, Mobile:1 -->
+						<div class="TwitterMain">
+							Twitter: @takara2314
+						</div>
+						<!-- 優先順> PC:2, Mobile:2 -->
+						<div class="TwitterSub">
+							Twitter(SUB): @takara2314_SUB
+						</div>
+						<!-- 優先順> PC:1, Mobile:3 -->
+						<div class="Discord">
+							Discord: 拡張的な宝箱#9220
+						</div>
+					</section>
+					<section class="MinorSection">
+						<div class="Minecraft">
+							Minecraft: takara2314
+						</div>
+						<div class="Steam">
+							Steam: takara2314_TK
+						</div>
+						<div class="GitHub">
+							GitHub: takara2314
+						</div>
+						<div class="AtCoder">
+							AtCoder: takara2314
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section class="seheki" id="seheki">
+			<div class="contents">
+				<h1>性的嗜好</h1>
+				もちろんそのまま載せず、“ある問題”を解けたら表示する。<br>
+				引かれない程度に抑える！
+			</div>
+		</section>
+
+		<footer>
+			<small>&copy; 2020 タカラーン (takara2314)</small>
+		</footer>
+	</body>
+</html>

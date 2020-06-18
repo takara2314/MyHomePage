@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>タカラーンの基地</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link rel="shortcut icon" href="../images/favicon.ico">
+	</head>
+
+	<body>
+		<header>
+			<div id="logo">ロゴ</div>
+			<div id="menu">
+				メニュー
+			</div>
+		</header>
+
+		<section id="selfintro">
+			<div id="contents">
+				<h1>
+					タカラーン<span id="idName">@takara2314</span>
+				</h1>
+				ちょっと変わった高専2年生です。フリック入力ができません。<br>
+				マイクラやプログラミングなど、様々なことに手を出しています。<br>
+				「世の中の役に立つ人になること」<br>
+				将来の夢は小学生の頃から変わっていません。<br>
+				日々精進していくのでよろしくお願いします！<br>
+				<ul id="hashtag">
+					<li><a href="https://twitter.com/search?q=%23kosen19s">#kosen19s</a></li>
+					<li><a href="https://twitter.com/search?q=%23Minecraft">#Minecraft</a></li>
+					<li><a href="https://twitter.com/search?q=%23robocon">#robocon</a></li>
+					<li><a href="https://twitter.com/search?q=%23procon31">#procon31</a></li>
+				</ul>
+			</div>	
+		</section>
+
+		<section id="portfolio">
+			<h1>製作物</h1>
+			<div id="mediaBox">
+				<div id="mediaNav">
+					<h2>{{.portfolioName}}</h2>
+					<ul id="mediaTag">
+						{{.mediaTags}}
+					</ul>
+					<div id="roundHorizonGray"></div>
+					<ul id="queryTag">
+						<li><input id="tagMinecraft"></li>
+						<li><input id="tagProgramming"></li>
+						<li><input id="tagIllustration"></li>
+					</ul>
+				</div>
+				<div id="mediaWindow">
+					<video id="mediaContent"></video><br>
+					<div id="seekBar"></div>
+					<div id="moveButton">
+						<div id="previousButton"></div>
+						<div id="nextButton"></div>
+					</div>
+				</div>
+		</section>
+
+		<section id="skill">
+			<h1>スキル・資格</h1>
+			<div id="skillBox">
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="Go"><br>
+					<div class="roundHorizonRed"></div>
+					Go
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="Python"><br>
+					<div class="roundHorizonRed"></div>
+					Python
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="C#"><br>
+					<div class="roundHorizonGreen"></div>
+					C#
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="Dart"><br>
+					<div class="roundHorizonBlue"></div>
+					Dart
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="JavaScript"><br>
+					<div class="roundHorizonGreen"></div>
+					JavaScript
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="HTML"><br>
+					<div class="roundHorizonRed"></div>
+					HTML
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="CSS"><br>
+					<div class="roundHorizonRed"></div>
+					CSS
+				</div>
+				<div class="skillButton">
+					<img class="skillIcon" src="" alt="英検"><br>
+					<div class="roundHorizonRed"></div>
+					英検
+				</div>
+		</section>
+
+		<section id="history">
+			<h1>歴史</h1>
+			<div id="historyBox">
+				<div id="timeMap">
+					<div class="upperPoint">
+						<img class="timePointIcon" src="" alt="誕生">
+						2003/11/14
+					</div>
+					<div class="lowerPoint">
+						<img class="timePointIcon" src="" alt="タカラーンブログ初登校">
+						2014/01
+					</div>
+					<div class="upperPoint">
+						<img class="timePointIcon" src="" alt="MCStarPark開設">
+						2014/10
+					</div>
+					<div class="lowerPoint">
+						<img class="timePointIcon" src="" alt="プログラミングを開始">
+						2017/11
+					</div>
+					<div class="upperPoint">
+						<img class="timePointIcon" src="" alt="鳥羽商船高専に入学">
+						2019/04
+					</div>
+				</div>
+				<div id="timePointDescription">
+					<h2>
+						{{.timePointName}}<span id="timePointAt">{{.timePointAt}}</span>
+					</h2>
+					{{.timePointContent}}
+				</div>
+			</div>
+		</section>
+
+		<section id="favorite">
+			<h1>好きなもの・趣味</h1>
+			<div id="favoriteBox">
+				<div class="favoriteMemo">
+					<div class="favoriteName">アニメ</div>
+					<ul>
+						<li>ドラえもん</li>
+						<li>クレヨンしんちゃん</li>
+						<li>小林さんのメイドラゴン</li>
+					</ul>
+				</div>
+				<div class="favoriteMemo">
+					<div class="favoriteName">ゲーム</div>
+					<ul>
+						<li>Minecraft</li>
+						<li>Cities: Skylines</li>
+						<li>アメーバピグ<span class="closedText">（終了）</span></li>
+					</ul>
+				</div>
+				<div class="favoriteMemo">
+					<div class="favoriteName">食べ物</div>
+					<ul>
+						<li>ハンバーガー</li>
+						<li>牛丼</li>
+						<li>寿司</li>
+					</ul>
+				</div>
+				<div class="favoriteMemo">
+					<div class="favoriteName">趣味</div>
+					<ul>
+						<li>ゲーム</li>
+						<li>動画・映画鑑賞</li>
+						<li>プログラミング</li>
+					</ul>
+				</div>
+				<div class="favoriteMemo">
+					<div class="favoriteName">性的嗜好</div>
+					<div id="sehekiGo"></div>
+					※問題に正解できたら見れます
+				</div>
+			</div>
+		</section>
+
+		<section id="link">
+			<h1>ソーシャルリンク</h1>
+			<div id="linkBox">
+				<div class="majorLink">
+					<a href="https://twitter.com/takara2314">
+						<img class="myIcon" src="" alt="Twitter">
+					</a>
+					<h2>Twitter</h2>
+					<div class="roundHorizonBlue"></div>
+					<ul>
+						<li>ふぉくしーど</li>
+						<li>日常</li>
+						<li>リプは絶対する</li>
+						<li>フォロバは絶対ではない</li>
+					</ul>
+					<a class="mainLinkButton" href="https://twitter.com/takara2314">リンク</a>
+				</div>
+				<div class="majorLink">
+					<a href="https://blog.2314.tk/">
+						<img class="myIcon" src="" alt="ブログ">
+					</a>
+					<h2>Blog</h2>
+					<div class="roundHorizonBlue"></div>
+					<ul>
+						<li>マイクラ</li>
+						<li>プログラミング</li>
+						<li>日常</li>
+					</ul>
+					<a class="subLinkButton" href="https://ameblo.jp/takara2314/">旧サイトリンク</a>
+					<a class="mainLinkButton" href="https://blog.2314.tk/">リンク</a>
+				</div>
+				<div class="majorLink">
+					<img class="myIcon" src="" alt="Discord">
+					<h2>Discord</h2>
+					<div class="roundHorizonBlue"></div>
+					<ul>
+						<li>フレンド承認は絶対する</li>
+						<li>チャット・通話歓迎</li>
+					</ul>
+					<div id="showDiscordTag">Tagを表示</a>
+				</div>
+				<div class="normalLink">
+					<a href="https://github.com/takara2314">
+						<img class="serviceIcon" src="" alt="GitHub">
+					</a>
+					<h2>GitHub</h2>
+				</div>
+				<div class="normalLink">
+					<img class="serviceIcon" src="" alt="電子メールアドレス">
+					<h2>Mail</h2>
+				</div>
+			</div>
+			<a class="wishList" href="https://www.amazon.co.jp/hz/wishlist/ls/3V56KMUKW9OT3">ほしい物リスト (Amazon)</a>
+		</section>
+
+		<footer>
+			<small>&copy; 2020 タカラーン (takara2314)</small>
+		</footer>
+	</body>
+</html>
