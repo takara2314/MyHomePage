@@ -2,21 +2,165 @@
 	font-family: 'Noto Sans JP';
 	src: url("../fonts/Noto Sans JP/NotoSansJP-Medium.otf");
 }
+
 @font-face {
 	font-family: 'Hind Guntur';
 	src: url('../fonts/Hind Guntur/HindGuntur-Medium.ttf')
 }
+
 @font-face {
 	font-family: 'Makinas';
 	src: url('../fonts/Makinas-4-Square.otf')
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    font-size: 2em;
-    font-family: 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
+	font-size: 1.5em;
+	font-family: 'Hind Guntur', 'Noto Sans JP', Meiryo, sans-serif;
+	background-color: whitesmoke;
 }
 
 ::selection {
 	background-color: rgba(0, 190, 240, 0.5);
 	color: #000000;
+}
+
+header {
+	width: calc(100% - 10vw);
+	height: 3em;
+	border-radius: 1.5em;
+	background-color: white;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+	margin: 2vh 5vw 0 5vw;
+	display: flex;
+	position: fixed;
+}
+@media screen and (orientation: landscape) {
+	header {
+		background-color: cyan;
+	}
+}
+
+/* ビューポートが横長ならば */
+@media screen and (orientation: landscape) {
+	section {
+		height: 100vh;
+		padding-top: 5em;
+		overflow: hidden;
+	}
+	section h1 {
+		font-size: 2.25em;
+		text-align: center;
+	}
+	
+	div.roundHorizonRed {
+		width: 95%;
+		height: 0.4em;
+		border-radius: 0.2em;
+		background-color: crimson;
+		margin: 0 2.5% 0 2.5%;
+	}
+	div.roundHorizonBlue {
+		width: 95%;
+		height: 0.4em;
+		border-radius: 0.2em;
+		background-color: dodgerblue;
+		margin: 0 2.5% 0 2.5%;
+	}
+	div.roundHorizonGreen {
+		width: 95%;
+		height: 0.4em;
+		border-radius: 0.2em;
+		background-color: lawngreen;
+		margin: 0 2.5% 0 2.5%;
+	}
+	div.roundHorizonGray {
+		width: 95%;
+		height: 0.4em;
+		border-radius: 0.2em;
+		background-color: gainsboro;
+		margin: 0 2.5% 0 2.5%;
+	}
+
+	section#selfintro div#contents {
+		font-size: 1.1em;
+		position: absolute;
+		right: 10vh;
+	}
+	section#selfintro div#contents h1 {
+		font-size: 2em;
+		text-align: left;
+	}
+	section#selfintro div#contents h1 span#idName {
+		font-size: 0.8em;
+		color: gray;
+		margin-left: 1em;
+	}
+	ul#hashtag {
+		width: 75%;
+		display: flex;
+		justify-content: space-between;
+		list-style: none; 
+	}
+	ul#hashtag li a {
+		color: rgb(27, 149, 224);
+		text-decoration: none;
+	}
+
+	div#mediaBox {
+		width: calc(100% - 10vw);
+		height: 70vh;
+		margin: 0 5vw 0 5vw;
+		display: flex;
+		justify-content: space-between;
+	}
+	div#mediaNav {
+		padding: 0.75em;
+		flex-basis: 30%;
+		border-radius: 1em;
+		background-color: white;
+		box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+	}
+	div#mediaName {
+		margin: -0.75em;
+		padding: 0.8em 0.8em 0 0.8em;
+		background-color: darkgreen;
+	}
+	div#mediaName h2 {
+		width: 8em;
+		color: white;
+		/* margin-top: 0.25em; */
+		line-height: 100%;
+	}
+	div#mediaDate {
+		font-size: 0.8em;
+		color: lightcyan;
+		margin-top: -0.25em;
+	}
+	ul#mediaLink {
+		font-size: 0.9em;
+		color: lightcyan;
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+	}
+	ul#mediaTag {
+		font-size: 0.9em;
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+	}
+	ul#mediaTag li {
+		border-radius: 0.45em;
+		background-color: lime;
+	}
+	div#mediaWindow {
+		flex-basis: 65%;
+		background-color: black;
+	}
 }

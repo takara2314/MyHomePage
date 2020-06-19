@@ -38,11 +38,22 @@
 			<h1>製作物</h1>
 			<div id="mediaBox">
 				<div id="mediaNav">
-					<h2>{{.portfolioName}}</h2>
+					<div id="mediaName">
+						<h2>{{.mediaTitle}}</h2>
+						<div id="mediaDate">
+							{{.mediaPublishDate}}
+						</div>
+						<ul id="mediaLink">
+							<li>Twitter</li>
+							<li>YouTube</li>
+						</ul>
+					</div>
+					{{.mediaDiscription}}
 					<ul id="mediaTag">
-						{{.mediaTags}}
+						<li>#Minecraft</li>
+						<li>#Mine-imator</li>
 					</ul>
-					<div id="roundHorizonGray"></div>
+					<div class="roundHorizonGray"></div>
 					<ul id="queryTag">
 						<li><input id="tagMinecraft"></li>
 						<li><input id="tagProgramming"></li>
@@ -113,7 +124,7 @@
 						2003/11/14
 					</div>
 					<div class="lowerPoint">
-						<img class="timePointIcon" src="" alt="タカラーンブログ初登校">
+						<img class="timePointIcon" src="" alt="タカラーンブログ初投稿">
 						2014/01
 					</div>
 					<div class="upperPoint">
