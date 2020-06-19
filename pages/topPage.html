@@ -40,29 +40,32 @@
 				<div id="mediaNav">
 					<div id="mediaName">
 						<h2>{{.mediaTitle}}</h2>
-						<div id="mediaDate">
+						<div id="mediaPublishDate">
 							{{.mediaPublishDate}}
 						</div>
 						<ul id="mediaLink">
-							<li>Twitter</li>
-							<li>YouTube</li>
+							<li><a>Twitter</a></li>
+							<li><a>YouTube</a></li>
 						</ul>
 					</div>
-					{{.mediaDiscription}}
+					<div id="mediaDiscription">
+						{{.mediaDiscription}}
+					</div>
 					<ul id="mediaTag">
-						<li>#Minecraft</li>
-						<li>#Mine-imator</li>
+						{{.mediaTags}}
+						<!-- <li class="fullWidthTag">プログラミング</li>
+						<li class="halfWidthTag">Go</li> -->
 					</ul>
 					<div class="roundHorizonGray"></div>
 					<ul id="queryTag">
-						<li><input id="tagMinecraft"></li>
-						<li><input id="tagProgramming"></li>
-						<li><input id="tagIllustration"></li>
+						<li class="queryHalfWidthTag"><input type="checkbox" id="queryTags" value="1" checked="checked">Minecraft</li>
+						<li class="queryFullWidthTag"><input type="checkbox" id="queryTags" value="2" checked="checked">プログラミング</li>
+						<li class="queryFullWidthTag"><input type="checkbox" id="queryTags" value="3" checked="checked">イラスト</li>
 					</ul>
 				</div>
 				<div id="mediaWindow">
-					<video id="mediaContent"></video><br>
-					<div id="seekBar"></div>
+					<video id="mediaContent"></video>
+					<div id="seekBar"><div id="seekBarMaterial"></div></div>
 					<div id="moveButton">
 						<div id="previousButton"></div>
 						<div id="nextButton"></div>
