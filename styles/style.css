@@ -47,43 +47,57 @@ header {
 
 /* ビューポートが横長ならば */
 @media screen and (orientation: landscape) {
-	section {
-		height: 100vh;
-		padding-top: 5em;
-		overflow: hidden;
+	@media screen and (max-height: 799px) {
+		section {
+			height: 100vh;
+			padding-top: 4em;
+			overflow: hidden;
+		}
+		section h1 {
+			font-size: 2.25em;
+			line-height: 100%;
+			text-align: center;
+		}	
 	}
-	section h1 {
-		font-size: 2.25em;
-		text-align: center;
+	@media screen and (min-height: 800px) {
+		section {
+			height: 100vh;
+			padding-top: 5em;
+			overflow: hidden;
+		}
+		section h1 {
+			font-size: 2.25em;
+			text-align: center;
+		}	
 	}
 	
 	div.roundHorizonRed {
-		width: 95%;
+		width: 90%;
 		height: 0.4em;
+		margin: 0 5% 0 5%;
 		border-radius: 0.2em;
 		background-color: crimson;
-		margin: 0 2.5% 0 2.5%;
 	}
 	div.roundHorizonBlue {
-		width: 95%;
+		width: 90%;
 		height: 0.4em;
+		margin: 0 5% 0 5%;
 		border-radius: 0.2em;
 		background-color: dodgerblue;
-		margin: 0 2.5% 0 2.5%;
 	}
 	div.roundHorizonGreen {
-		width: 95%;
+		width: 90%;
 		height: 0.4em;
+		margin: 0 5% 0 5%;
 		border-radius: 0.2em;
 		background-color: lawngreen;
-		margin: 0 2.5% 0 2.5%;
 	}
 	div.roundHorizonGray {
 		width: 95%;
 		height: 0.4em;
+		margin: 0 2.5% 0 2.5%;
 		border-radius: 0.2em;
 		background-color: gainsboro;
-		margin: 0 2.5% 0 2.5%;
 	}
 
 	section#selfintro div#contents {
@@ -91,9 +105,18 @@ header {
 		position: absolute;
 		right: 10vh;
 	}
-	section#selfintro div#contents h1 {
-		font-size: 2em;
-		text-align: left;
+	@media screen and (max-height: 799px) {
+		section#selfintro div#contents h1 {
+			font-size: 2em;
+			line-height: 200%;
+			text-align: left;
+		}	
+	}
+	@media screen and (min-height: 800px) {
+		section#selfintro div#contents h1 {
+			font-size: 2em;
+			text-align: left;
+		}	
 	}
 	section#selfintro div#contents h1 span#idName {
 		font-size: 0.8em;
@@ -155,12 +178,23 @@ header {
 	ul#mediaLink a:hover {
 		font-weight: bold;
 	}
-	div#mediaDiscription {
-		height: 50%;
-		font-size: 0.9em;
-		line-height: 175%;
-		margin-top: 1em;
-		overflow: hidden;
+	@media screen and (max-height: 799px) {
+		div#mediaDiscription {
+			height: 35%;
+			font-size: 0.9em;
+			line-height: 175%;
+			margin-top: 1em;
+			overflow: hidden;
+		}
+	}
+	@media screen and (min-height: 800px) {
+		div#mediaDiscription {
+			height: 50%;
+			font-size: 0.9em;
+			line-height: 175%;
+			margin-top: 1em;
+			overflow: hidden;
+		}
 	}
 	ul#mediaTag {
 		display: flex;
@@ -216,8 +250,8 @@ header {
 		width: 60vw;
 		height: 0.5em;
 		background: -moz-linear-gradient(left, palegreen, darkgreen);
-  		background: -webkit-linear-gradient(left, palegreen, darkgreen);
-  		background: linear-gradient(to right, palegreen, darkgreen);
+		  background: -webkit-linear-gradient(left, palegreen, darkgreen);
+		  background: linear-gradient(to right, palegreen, darkgreen);
 		position: absolute;
 		bottom: 0;
 	}
@@ -245,5 +279,37 @@ header {
 	}
 	svg.nextButton:hover g polygon {
 		fill: rgba(255, 255, 255, 1) !important;
+	}
+
+	div#skillBox {
+		width: calc(100% - 10vw);
+		height: 70vh;
+		margin: 0 5vw 0 5vw;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	div.skillButton {
+		width: 20vw;
+		height: 30vh;
+		text-align: center;
+		border-radius: 0.5em;
+		background-color: white;
+		box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+	}
+	span.skillNameHalfWidth {
+		font-size: 1.25em;
+	}
+	span.skillNameFullWidth {
+		font-size: 1em;
+	}
+	div.skillIcon {
+		width: 90%;
+		height: 21vh;
+		margin: 0 5% 0 5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
