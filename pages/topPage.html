@@ -44,8 +44,7 @@
 							{{.mediaPublishDate}}
 						</div>
 						<ul id="mediaLink">
-							<li><a>Twitter</a></li>
-							<li><a>YouTube</a></li>
+							{{.mediaLinks}}
 						</ul>
 					</div>
 					<div id="mediaDiscription">
@@ -67,8 +66,20 @@
 					<video id="mediaContent"></video>
 					<div id="seekBar"><div id="seekBarMaterial"></div></div>
 					<div id="moveButton">
-						<div id="previousButton"></div>
-						<div id="nextButton"></div>
+						<div id="previousButtonBlock">
+							<svg class="previousButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 2.5em; height: 2.5em; opacity: 1;" xml:space="preserve">
+								<g>
+									<polygon points="419.916,71.821 348.084,0 92.084,256.005 348.084,512 419.916,440.178 235.742,256.005" style="fill: rgba(255, 255, 255, 0.25);"></polygon>
+								</g>
+							</svg>
+						</div>
+						<div id="nextButtonBlock">
+							<svg class="nextButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 2.5em; height: 2.5em; opacity: 1;" xml:space="preserve">
+								<g>
+									<polygon points="163.916,0 92.084,71.822 276.258,255.996 92.084,440.178 163.916,512 419.916,255.996" style="fill: rgba(255, 255, 255, 0.25);"></polygon>
+								</g>
+							</svg>
+						</div>
 					</div>
 				</div>
 		</section>
