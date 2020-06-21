@@ -102,6 +102,7 @@ header {
 
 	section#selfintro div#contents {
 		font-size: 1.1em;
+		margin-top: 1.25em;
 		position: absolute;
 		right: 10vh;
 	}
@@ -292,17 +293,16 @@ header {
 	div.skillButton {
 		width: 20vw;
 		height: 30vh;
+		font-size: 1.25em;
 		text-align: center;
 		border-radius: 0.5em;
 		background-color: white;
 		box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
 		overflow: hidden;
 	}
-	span.skillNameHalfWidth {
-		font-size: 1.25em;
-	}
-	span.skillNameFullWidth {
-		font-size: 1em;
+	div.skillButton:hover {
+		border-radius: 100vw;
+		box-shadow: 0 0 1em rgba(255, 192, 203, 0.5);
 	}
 	div.skillIcon {
 		width: 90%;
@@ -311,5 +311,32 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	div#historyBox {
+		width: calc(100% - 10vw);
+		height: 70vh;
+		margin: 0 5vw 0 5vw;
+		border-radius: 1em;
+		background-color: mediumspringgreen;
+		box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+	div#timeMap {
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+	div#timePointDescription {
+		width: 95%;
+		height: 50%;
+		margin: 0 2.5vw 0 2.5vw;
+		padding: 0.75em 0.75em 0 0.75em;
+		border-top: solid 0.5em gainsboro;
+		border-left: solid 0.5em gainsboro;
+		background-color: white;
 	}
 }
