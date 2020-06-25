@@ -339,4 +339,41 @@ header {
 		border-left: solid 0.5em gainsboro;
 		background-color: white;
 	}
+
+	div#favoriteBox {
+		width: calc(100% - 10vw);
+		height: 70vh;
+		margin: 0 5vw 0 5vw;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	div.favoriteMemo {
+		width: 40vw;
+		height: 30vh;
+		font-size: 1.25em;
+		text-align: center;
+		transform: rotate(-3deg);
+		background-color: white;
+		position: relative;
+		overflow: hidden;
+	}
+	div.favoriteMemo:before {
+		height: 0;
+		content: "";
+		border-bottom: solid 1em whitesmoke;
+		border-left: solid 1em transparent;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	div.favoriteMemo:after {
+		height: 0;
+		content: "";
+		border-top: solid 1em lightgray;
+		border-right: solid 1em transparent;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 }
