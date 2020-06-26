@@ -433,35 +433,47 @@
 			<div id="favoriteBox">
 				<div class="favoriteMemo">
 					<div class="favoriteName">アニメ</div>
-					<ul>
-						<li>ドラえもん</li>
-						<li>クレヨンしんちゃん</li>
-						<li>小林さんのメイドラゴン</li>
-					</ul>
+					<div class="favoriteList">
+						<ol>
+							<li>ドラえもん</li>
+							<li>クレヨンしんちゃん</li>
+							<li>小林さんのメイドラゴン</li>
+							<li>干物妹！うまるちゃん</li>
+						</ol>
+					</div>
 				</div>
 				<div class="favoriteMemo">
 					<div class="favoriteName">ゲーム</div>
-					<ul>
-						<li>Minecraft</li>
-						<li>Cities: Skylines</li>
-						<li>アメーバピグ<span class="closedText">（終了）</span></li>
-					</ul>
+					<div class="favoriteList">
+						<ol>
+							<li>Minecraft</li>
+							<li>Cities: Skylines</li>
+							<li>アメーバピグ<span class="closedText">（終了）</span></li>
+							<li>広告に出てくるようなスマホゲー</li>
+						</ol>
+					</div>
 				</div>
 				<div class="favoriteMemo">
 					<div class="favoriteName">食べ物</div>
-					<ul>
-						<li>ハンバーガー</li>
-						<li>牛丼</li>
-						<li>寿司</li>
-					</ul>
+					<div class="favoriteList">
+						<ol>
+							<li>ハンバーガー</li>
+							<li>牛丼</li>
+							<li>寿司</li>
+							<li>カレーライス</li>
+						</ol>
+					</div>
 				</div>
 				<div class="favoriteMemo">
 					<div class="favoriteName">趣味</div>
-					<ul>
-						<li>ゲーム</li>
-						<li>動画・映画鑑賞</li>
-						<li>プログラミング</li>
-					</ul>
+					<div class="favoriteList">
+						<ol>
+							<li>ゲーム</li>
+							<li>動画・映画鑑賞</li>
+							<li>プログラミング</li>
+							<li>思いついたことをやること</li>
+						</ol>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -469,44 +481,48 @@
 		<section id="link">
 			<h1>ソーシャルリンク</h1>
 			<div id="linkBox">
-				<div class="majorLink">
-					<a href="https://twitter.com/takara2314">
-						<img class="myIcon" src="" alt="Twitter">
-					</a>
-					<h2>Twitter</h2>
-					<div class="roundHorizonBlue"></div>
-					<ul>
-						<li>ふぉくしーど</li>
-						<li>日常</li>
-						<li>リプは絶対する</li>
-						<li>フォロバは絶対ではない</li>
-					</ul>
-					<a class="mainLinkButton" href="https://twitter.com/takara2314">リンク</a>
+				<div id="majorLinks">
+					<div class="majorLink">
+						<a href="https://twitter.com/takara2314">
+							<img class="myIcon" src="" alt="Twitter">
+						</a>
+						<h2>Twitter</h2>
+						<div class="roundHorizonBlue"></div>
+						<ul>
+							<li>ふぉくしーど</li>
+							<li>日常</li>
+							<li>リプは絶対する</li>
+							<li>フォロバは絶対ではない</li>
+						</ul>
+						<a class="mainLinkButton" href="https://twitter.com/takara2314">リンク</a>
+					</div>
+					<div class="majorLink">
+						<a href="https://blog.2314.tk/">
+							<img class="myIcon" src="" alt="ブログ">
+						</a>
+						<h2>Blog</h2>
+						<div class="roundHorizonBlue"></div>
+						<ul>
+							<li>マイクラ</li>
+							<li>プログラミング</li>
+							<li>日常</li>
+						</ul>
+						<a class="subLinkButton" href="https://ameblo.jp/takara2314/">旧サイトリンク</a>
+						<a class="mainLinkButton" href="https://blog.2314.tk/">リンク</a>
+					</div>
+					<div class="majorLink">
+						<img class="myIcon" src="" alt="Discord">
+						<h2>Discord</h2>
+						<div class="roundHorizonBlue"></div>
+						<ul>
+							<li>フレンド承認は絶対する</li>
+							<li>チャット・通話歓迎</li>
+						</ul>
+						<div id="showDiscordTag">Tagを表示</a>
+					</div>
 				</div>
-				<div class="majorLink">
-					<a href="https://blog.2314.tk/">
-						<img class="myIcon" src="" alt="ブログ">
-					</a>
-					<h2>Blog</h2>
-					<div class="roundHorizonBlue"></div>
-					<ul>
-						<li>マイクラ</li>
-						<li>プログラミング</li>
-						<li>日常</li>
-					</ul>
-					<a class="subLinkButton" href="https://ameblo.jp/takara2314/">旧サイトリンク</a>
-					<a class="mainLinkButton" href="https://blog.2314.tk/">リンク</a>
-				</div>
-				<div class="majorLink">
-					<img class="myIcon" src="" alt="Discord">
-					<h2>Discord</h2>
-					<div class="roundHorizonBlue"></div>
-					<ul>
-						<li>フレンド承認は絶対する</li>
-						<li>チャット・通話歓迎</li>
-					</ul>
-					<div id="showDiscordTag">Tagを表示</a>
-				</div>
+			</div>
+			<div id="normalLinks">
 				<div class="normalLink">
 					<a href="https://github.com/takara2314">
 						<img class="serviceIcon" src="" alt="GitHub">
@@ -518,7 +534,8 @@
 					<h2>Mail</h2>
 				</div>
 			</div>
-			<a class="wishList" href="https://www.amazon.co.jp/hz/wishlist/ls/3V56KMUKW9OT3">ほしい物リスト (Amazon)</a>
+		</div>
+		<a class="wishList" href="https://www.amazon.co.jp/hz/wishlist/ls/3V56KMUKW9OT3">ほしい物リスト (Amazon)</a>
 		</section>
 
 		<footer>
