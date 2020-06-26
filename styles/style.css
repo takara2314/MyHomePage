@@ -376,4 +376,7 @@ header {
 		right: 0;
 		bottom: 0;
 	}
+	div.favoriteName {
+		background-color: pink;
+	}
 }
