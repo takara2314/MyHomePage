@@ -69,9 +69,29 @@ body {
 		color: dimgray;
 		position: relative;
 	}
-	div#headerMenu ul li a:hover {
+	div#headerMenu ul li#selfintroLink a:hover {
 		color: black;
-		border-bottom: solid 2em purple;
+		border-bottom: solid 2em crimson;
+	}
+	div#headerMenu ul li#portfolioLink a:hover {
+		color: black;
+		border-bottom: solid 2em orange;
+	}
+	div#headerMenu ul li#skillLink a:hover {
+		color: black;
+		border-bottom: solid 2em Gold;
+	}
+	div#headerMenu ul li#historyLink a:hover {
+		color: black;
+		border-bottom: solid 2em lawngreen;
+	}
+	div#headerMenu ul li#favoriteLink a:hover {
+		color: black;
+		border-bottom: solid 2em dodgerblue;
+	}
+	div#headerMenu ul li#linkLink a:hover {
+		color: black;
+		border-bottom: solid 2em blueviolet;
 	}
 }
 
@@ -131,11 +151,21 @@ body {
 		background-color: gainsboro;
 	}
 
-	section#selfintro div#contents {
-		font-size: 1.1em;
-		margin-top: 1.25em;
-		position: absolute;
-		right: 10vh;
+	@media screen and (max-height: 900px) {
+		section#selfintro div#contents {
+			font-size: 1.1em;
+			margin-top: 1.25em;
+			position: absolute;
+			right: 7.5vh;
+		}
+	}
+	@media screen and (min-height: 901px) {
+		section#selfintro div#contents {
+			font-size: 1.5em;
+			margin-top: 1.25em;
+			position: absolute;
+			right: 20vh;
+		}
 	}
 	@media screen and (max-height: 799px) {
 		section#selfintro div#contents h1 {
@@ -219,9 +249,18 @@ body {
 			overflow: hidden;
 		}
 	}
-	@media screen and (min-height: 800px) {
+	@media screen and (min-height: 800px) and (max-height: 900px) {
 		div#mediaDiscription {
 			height: 50%;
+			font-size: 0.9em;
+			line-height: 175%;
+			margin-top: 1em;
+			overflow: hidden;
+		}
+	}
+	@media screen and (min-height: 901px) {
+		div#mediaDiscription {
+			height: 55%;
 			font-size: 0.9em;
 			line-height: 175%;
 			margin-top: 1em;
@@ -282,8 +321,8 @@ body {
 		width: 60vw;
 		height: 0.5em;
 		background: -moz-linear-gradient(left, palegreen, darkgreen);
-		  background: -webkit-linear-gradient(left, palegreen, darkgreen);
-		  background: linear-gradient(to right, palegreen, darkgreen);
+		background: -webkit-linear-gradient(left, palegreen, darkgreen);
+		background: linear-gradient(to right, palegreen, darkgreen);
 		position: absolute;
 		bottom: 0;
 	}
@@ -343,10 +382,78 @@ body {
 		align-items: center;
 		justify-content: center;
 	}
+	@media screen and (max-height: 900px) {
+		div.skillIcon svg#GoIcon {
+			width: 7em;
+			height: 7em;
+		}
+		div.skillIcon svg#PythonIcon {
+			width: 3.5em;
+			height: 3.5em;
+		}
+		div.skillIcon svg#CsharpIcon {
+			width: 3.5em;
+			height: 3.5em;
+		}
+		div.skillIcon svg#DartIcon {
+			width: 3.5em;
+			height: 3.5em;
+		}
+		div.skillIcon svg#JavaScriptIcon {
+			width: 3.25em;
+			height: 3.25em;
+		}
+		div.skillIcon svg#HTMLIcon {
+			width: 2.55em;
+			height: 3.55em;
+		}
+		div.skillIcon svg#CSSIcon {
+			width: 2.55em;
+			height: 3.8em;
+		}
+		div.skillIcon svg#SQLIcon {
+			width: 3.5em;
+			height: 3.5em;
+		}
+	}
+	@media screen and (min-height: 901px) {
+		div.skillIcon svg#GoIcon {
+			width: 8.75em;
+			height: 8.75em;
+		}
+		div.skillIcon svg#PythonIcon {
+			width: 4.375em;
+			height: 4.375em;
+		}
+		div.skillIcon svg#CsharpIcon {
+			width: 4.375em;
+			height: 4.375em;
+		}
+		div.skillIcon svg#DartIcon {
+			width: 4.375em;
+			height: 4.375em;
+		}
+		div.skillIcon svg#JavaScriptIcon {
+			width: 4.0625em;
+			height: 4.0625em;
+		}
+		div.skillIcon svg#HTMLIcon {
+			width: 3.1875em;
+			height: 4.4375em;
+		}
+		div.skillIcon svg#CSSIcon {
+			width: 3.1875em;
+			height: 4.75em;
+		}
+		div.skillIcon svg#SQLIcon {
+			width: 4.375em;
+			height: 4.375em;
+		}
+	}
 
 	div#historyBox {
 		width: calc(100% - 10vw);
-		height: 70vh;
+		height: 60vh;
 		margin: 0 5vw 0 5vw;
 		border-radius: 1em;
 		background-color: mediumspringgreen;
@@ -354,21 +461,73 @@ body {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		position: relative;
 		overflow: hidden;
 	}
 	div#timeMap {
+		width: 100%;
+		height: 20%;
+		padding: 3em 0 0 2em;
 		display: flex;
-		justify-content: space-between;
+		position: relative;
 		overflow: hidden;
+	}
+	div.timePoint {
+		text-align: center;
+		flex-basis: 10%;
+	}
+	div.upperPointAt {
+		margin-top: -0.75em;
+		text-align: center;
+		color: black;
+		position: relative;
+	}
+	div.lowerPointAt {
+		margin-top: -4.5em;
+		text-align: center;
+		color: black;
+		position: relative;
+	}
+	div.timeLine {
+		width: 100%;
+		height: 100%;
+		flex-basis: 20%;
+		position: relative;
+	}
+	div.timeLine:after {
+		width: 100%;
+		height: 0.4em;
+		content: '';
+		background-color: white;
+		position: absolute;
+		top: 1.25em;
+	}
+	div#timeLineContinue {
+		width: 100%;
+		height: 100%;
+		flex-basis: 30%;
+		position: relative;
+	}
+	div#timeLineContinue:after {
+		width: 100%;
+		height: 0.4em;
+		content: '';
+		background: -moz-linear-gradient(left, white, transparent);
+		background: -webkit-linear-gradient(left, white, transparent);
+		background: linear-gradient(to right, white, transparent);
+		position: absolute;
+		top: 1.25em;
 	}
 	div#timePointDescription {
 		width: 95%;
 		height: 50%;
-		margin: 0 2.5vw 0 2.5vw;
-		padding: 0.75em 0.75em 0 0.75em;
+		margin: 0 2.5%;
+		padding: 0.5em;
 		border-top: solid 0.5em gainsboro;
 		border-left: solid 0.5em gainsboro;
 		background-color: white;
+		position: absolute;
+		bottom: 1em;
 	}
 
 	div#favoriteBox {
