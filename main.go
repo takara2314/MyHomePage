@@ -3,7 +3,7 @@
 package main
 
 import (
-	"html/template"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -17,7 +17,8 @@ func main() {
 				http.FileServer(http.Dir(folder+"/"))))
 	}
 
-	http.HandleFunc("/", serverFunc)
+	http.HandleFunc("/", serverFuncMain)
+	http.HandleFunc("/tt2020", serverFuncTT2020)
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -33,16 +34,22 @@ func main() {
 	}
 }
 
-func serverFunc(w http.ResponseWriter, r *http.Request) {
-	var tpl *template.Template = template.Must(template.ParseFiles("pages/homePage.html"))
+func serverFuncMain(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "まだ準備中だよ")
+
+	// var tpl *template.Template = template.Must(template.ParseFiles("pages/homePage.html"))
 
 	if r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
 	}
 
-	err := tpl.Execute(w, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
+	// err := tpl.Execute(w, nil)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+}
+
+func serverFuncTT2020(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "https://twitter.com/takara2314/status/1285527855284105216", 301)
 }
