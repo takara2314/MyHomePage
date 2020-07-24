@@ -19,6 +19,7 @@ func main() {
 
 	http.HandleFunc("/", serverFuncMain)
 	http.HandleFunc("/tt2020", serverFuncTT2020)
+	http.HandleFunc("/want", serverFuncWantList)
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -52,4 +53,8 @@ func serverFuncMain(w http.ResponseWriter, r *http.Request) {
 
 func serverFuncTT2020(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "https://twitter.com/takara2314/status/1285527855284105216", 301)
+}
+
+func serverFuncWantList(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "https://www.amazon.co.jp/hz/wishlist/ls/3V56KMUKW9OT3", 301)
 }
