@@ -6,7 +6,8 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.LoadHTMLGlob("*.tmpl")
+	r.LoadHTMLGlob("*.html")
+	r.Static("/images", "./images")
 
 	r.GET("/", homeGETFunc)
 	r.GET("/want", wantGETFunc)
@@ -17,7 +18,7 @@ func main() {
 
 // homeGETFunc は/にGETされたときの処理
 func homeGETFunc(c *gin.Context) {
-	c.HTML(200, "index.tmpl", nil)
+	c.HTML(200, "index.html", nil)
 }
 
 // wantGETFunc は/wantにGETされたときの処理
