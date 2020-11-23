@@ -6,8 +6,12 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.LoadHTMLGlob("*.html")
-	r.Static("/images", "./images")
+
+	// HTMLテンプレートの読み込み (同じディレクトリで実行する扱い)
+	r.LoadHTMLGlob("./dist/*.html")
+	// 静的ファイルの読み込み
+	r.Static("/dist", "./dist")
+	r.Static("/resources", "./resources")
 
 	r.GET("/", homeGETFunc)
 	r.GET("/want", wantGETFunc)

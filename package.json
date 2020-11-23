@@ -1,0 +1,29 @@
+{
+  "name": "myhomepage",
+  "version": "1.2.0",
+  "description": "This package is takara2314's homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takara2314/MyHomePage.git"
+  },
+  "author": "Takara Hamaguchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takara2314/MyHomePage/issues"
+  },
+  "homepage": "https://github.com/takara2314/MyHomePage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.1.2"
+  }
+}

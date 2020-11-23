@@ -4,3 +4,9 @@
 
 # Website
 https://2314.tk/
+
+# Flontend
+Pug(HTML), SASS(CSS), TypeScript(JavaScript)
+
+# Backend
+Gin(Go)
