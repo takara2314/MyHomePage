@@ -27,13 +27,40 @@ div#profile {
         }
 
         span#idname {
-            color: gray;
+            color: rgba(0, 0, 0, 0.5);
             font-weight: normal;
         }
     }
 
     p#job {
-        font-family: Lato, 'Noto Sans JP', Meiryo, sans-serif;
         font-size: 0.8em;
+    }
+}
+
+nav {
+    font-family: 'Lexend Deca', 'Noto Sans JP', Meiryo, sans-serif;
+    background-color: white;
+    padding: 1em;
+    height: 7.5em;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    div#buttons {
+        display: flex;
+        div {
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    div#copyright {
+        color: gray;
+        font-size: 0.8em;
+        text-align: right;
     }
 }
