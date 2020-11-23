@@ -74,4 +74,17 @@ const tsCompile = () => {
     )
 };
 
-exports.default = gulp.parallel(pugCompile, sassCompile, tsCompile);
+// 自動コンパイル
+const liveCompile = () => {
+    gulp.watch(paths.pug + '**/*.pug')
+    .on('change', gulp.series(pugCompile));
+
+    gulp.watch(paths.sass + '**/*.scss')
+    .on('change', gulp.series(sassCompile));
+
+    gulp.watch(paths.typescript + '**/*.ts')
+    .on('change', gulp.series(tsCompile));
+}
+
+gulp.task('default', gulp.parallel(pugCompile, sassCompile, tsCompile));
+gulp.task('live', liveCompile);
