@@ -1,0 +1,26 @@
+-
+  var buttonData = [
+    ["about", "About"],
+    ["skills", "Skills"],
+    ["works", "Works"],
+    ["history", "History"],
+    ["favorites", "Favorites"],
+    ["lab", "Lab"],
+    ["links", "Links"],
+    ["contact", "Contact"]
+  ]
+
+nav
+  #curve
+  #square
+    h1#title
+      a(href="/") タカラーンの基地
+    #buttons
+      - for (var i = 0; i < buttonData.length; i++)
+        div
+          a(href="/"+buttonData[i][0])
+            img(src="resources/hoge.png" height="80px")
+            br
+            | #{buttonData[i][1]}
+    #copyright
+      small &copy; 2020 Takara Hamaguchi

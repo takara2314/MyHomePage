@@ -17,7 +17,7 @@ body {
 }
 
 div#profile {
-    h1#mainname {
+    h1#name {
         font-family: 'Lexend Deca', 'Noto Sans JP', Meiryo, sans-serif;
         font-size: 1.5em;
 
@@ -37,6 +37,56 @@ div#profile {
     }
 }
 
+h1#title {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.25em;
+}
+
+main {
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    height: 100vh;
+    width: 35em;
+    font-size: 0.8em;
+    background-color: white;
+    margin-left: calc(42.5vw + 2.5em);
+
+    h1#name {
+        font-family: 'Lexend Deca', 'Noto Sans JP', Meiryo, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        div#idname {
+            color: gray;
+            font-weight: normal;
+            font-size: 0.7em;
+            padding-top: -0.4em;
+        }
+    }
+
+    p {
+        padding-bottom: 0.25em;
+    }
+
+    h2#hobby {
+        padding-top: 0.5em;
+        font-size: 1.25em;
+    }
+
+    ul {
+        padding-left: 1em;
+        list-style: square;
+        li {
+            h3 {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
 nav {
     font-family: 'Lexend Deca', 'Noto Sans JP', Meiryo, sans-serif;
     padding: 0 1.5em 1.5em 1.5em;
@@ -52,6 +102,7 @@ nav {
         border-radius: 50%;
         height: calc(100vw * 9);
         width: calc(100vw * 9);
+        box-shadow: 0 -0.25em 1em rgba(0,0,0,0.1);
         position: fixed;
         left: calc((100vw / 2) * -8);
         top: calc((100vh * 3) / 4);
@@ -59,14 +110,22 @@ nav {
 
     div#square {
         position: relative;
+        bottom: 0.25em;
         display: flex;
         flex-direction:column;
         align-items: center;
-        div#navMessage {
+        h1#title {
+            font-size: 1em;
+            font-weight: bold;
             padding-bottom: 0.3em;
+            color: gray;
+            a {
+                color: gray;
+                text-decoration: none;
+            }
         }
         div#buttons {
-            width: 40em;
+            width: 42.5em;
             display: flex;
             justify-content: space-between;
             div {

@@ -1,0 +1,41 @@
+include head.pug
+
+-
+  var hobby = [
+    ['プログラミング', '思い通りに処理を考えるのが楽しい！'],
+    ['ゲーム', 'ホラー系以外はほぼ全部好きです！'],
+    ['音楽鑑賞', 'J-POPやロック、ボカロが好きです！']
+  ]
+
+doctype html
+html(lang="ja")
+  +config("僕について - タカラーンの基地")
+
+  body
+    h1#title 僕について
+    main
+      h1#name
+        span#nickname タカラーン
+        span#realname （濱口　宝）
+        #idname @takara2314
+
+      p
+      | やっほー (ﾉ・ω・)ﾉ
+      br
+      | 気まぐれで生きている高専2年生です！
+      | 幼少期にPCに興味を持ち、情報系の学校に進学しました。
+      | 気軽に「タカラーン」や「たからん」と呼んでくれると嬉しいです。
+
+      p
+      | 小学3年生の頃にアメーバピグ、小学5年生の頃にMinecraftを始めて以来、
+      | 「自分で作る楽しさ」を知り、様々なモノを作っています。
+      | 将来、誰かのためにモノを作れる人になるために、一日一日精進します！
+
+      h2#hobby 趣味
+      ul
+        - for (var i = 0; i < hobby.length; i++)
+          li
+            h3 #{hobby[i][0]}
+            p #{hobby[i][1]}
+
+    include nav.pug
